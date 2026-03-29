@@ -1,6 +1,10 @@
  if (chart) {
     chart.destroy();
   }
+if (baixo.length > 0) {
+  alerta.innerText = `⚠️ ${baixo.length} produto(s) com estoque baixo`;
+} else {
+  alerta.innerText = "✅ Estoque saudável";
 document.getElementById("movimentacao").innerText =
   `Saída de ${qtd} unidades em ${nome}`;
 document.getElementById("movimentacao").innerText =
