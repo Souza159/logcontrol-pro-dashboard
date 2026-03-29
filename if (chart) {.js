@@ -1,7 +1,8 @@
  if (chart) {
     chart.destroy();
   }
-
+document.getElementById("movimentacao").innerText =
+  `Entrada de ${qtd} unidades em ${nome}`;
   chart = new Chart(ctx, {
     type: "bar",
     data: {
