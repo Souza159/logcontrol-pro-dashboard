@@ -2,6 +2,8 @@
     chart.destroy();
   }
 document.getElementById("movimentacao").innerText =
+  `Saída de ${qtd} unidades em ${nome}`;
+document.getElementById("movimentacao").innerText =
   `Entrada de ${qtd} unidades em ${nome}`;
   chart = new Chart(ctx, {
     type: "bar",
